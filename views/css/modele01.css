@@ -1,191 +1,214 @@
 /* ==============================================
-   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 01
-   © Elephorm & Alsacreations.com
+   FEUILLE DE STYLES DES GABARITS HTML/CSS
+   Â© Elephorm & Alsacreations.com
    Conditions d'utilisation:
    http://creativecommons.org/licenses/by/2.0/fr/
-   ============================================== */
 
+   ModifiÃ©e dans le cadre du cours de PHP /projet Web
+   Ã  l'Institut Paul Lambin
+   http://www.vinci.be/fr-be/ipl/Pages/Accueil.aspx
+
+   ============================================== */
 
 /* --- COULEURS --- */
 
-/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
-   uniquement les couleurs de fond (propriétés background) et les couleurs
-   du texte (propriété color).
-   Pour modifier la disposition des blocs, voir plus bas dans la feuille de
-   styles la partie «positionnement». */
-
-/* Général */
+/* GÃ©nÃ©ral */
 body {
-	color: #F0E39E;
-	background: #181A12; /* Voir -> Note 1 ci-dessous */
+	color: #ffffff;
+	background: #585858;
 }
+
 a {
 	color: #FF6533;
 }
+
 a:hover, a:focus {
 	color: #FF4C00;
 }
+
 strong {
-	color: #A1B55D;
+	color: #398d40;
 }
 
-/* En-tête */
-#entete {
+/* En-tÃªte */
+header {
+	background: #585858;
+}
+
+/* Navigation */
+nav {
 	background: #181A12;
 }
 
-/* Navigation #181A12; */
-#navigation {
-	background: #000000;
+nav a {
+	color: #dcdfd5;
 }
-#navigation a {
-	color: #FF6533;
-}
-#navigation a:hover, #navigation a:focus {
+
+nav a:hover, nav a:focus {
 	background: #000000;
+	color: #398d40;
 }
 
 /* Contenu principal */
 #contenu {
 	color: #363B29;
-	background: #cbd888;
+	background: #a5a5a5;
 }
+
 #contenu a {
 	color: #332510;
 }
+
 #contenu a:hover, #contenu a:focus {
 	color: #6E5122;
 }
+
 #contenu strong {
 	color: #181A12;
 }
 
+h4 {
+	color: #ffffff;
+}
+
 /* Pied de page */
-#pied {
-	color: #E6A948;
+footer {
+	color: #666666;
+	padding: 50px 20px;
+	font-size: .8em;
+}
+
+footer p {
+	margin: .5em 0;
+}
+
+footer #copyright {
+	float: right;
+	margin: .5em 0 30px 10%;
+	font-size: 1em;
 }
 
 /* Formulaire */
 .formulaire {
-	padding: 12px 12px;
-	background: #cbdd88;
+	padding: 1px 12px;
+	background: #a5a5a5;
 }
 
 /* Notification */
 #notification {
-	color: #582758;
+	color: #398d40;
 }
 
+.html {
+	font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New",
+	monospace;
+	font-size: larger;
+	color: #398d40;
+}
+
+#tableBalises th {
+	border-style: solid;
+	border-width: thin;
+	border-collapse: collapse;
+	background-color: #DCDCDC;
+}
+
+#tableBalises td {
+	border-style: solid;
+	border-width: thin;
+	border-collapse: collapse;
+}
 
 /* --- POSITIONNEMENT --- */
 
 /* Page */
 body {
-	padding: 0; /* -> 2 */
+	padding: 0;
 }
 
-/* En-tête */
-#entete {
+/* En-tÃªte */
+header {
 	padding: 15px 20px 10px 20px;
 }
-#entete h1 {
+
+header h1 {
 	margin: 0;
 }
-#entete h1 img {
-	float: left;
+
+header h1 img {
+	float: right;
 	margin: 7px 20px 10px 0;
+	width: 140px;
+	height: auto;
 }
-#entete .sous-titre {
+
+header .sous-titre {
 	margin: 4px 0 15px 0;
+	font-size: 1.1em;
 }
 
 /* Menu de navigation */
-#navigation {
-	padding: 12px 15px;
+nav {
+	margin: 0px 200px 0px 0px;
+	padding: 5px 50px 5px 5px;
 }
-#navigation ul {
-	margin: 0;
+
+nav ul {
+	margin: 12px 50px 12px 0px;
 	padding: 0;
 	list-style: none;
 }
-#navigation li {
+
+nav li {
 	display: inline; /* -> 3 */
 }
-#navigation a {
+
+nav a {
 	padding: 6px;
 	line-height: 1.5;
 	font-size: .9em;
 	text-decoration: none;
 }
 
-/* Contenu */
+nav
+
+	/* Contenu */
 #contenu {
 	padding: 10px 20px;
 }
+
 #contenu > :first-child {
 	margin-top: 10px;
 }
+
 #contenu p, #contenu li {
 	line-height: 1.5;
 }
 
-/* Pied de page */
-#pied {
-	padding: 15px 20px;
-	font-size: .85em;
-}
-#pied p {
-	margin: .5em 0;
-}
-#pied #copyright {
-	float: right;
-	margin: .5em 0 30px 10%;
-	font-size: 1em;
-}
-
-/* Tableau repris du cours d'HTML */
-.html {
-	font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New",
-		monospace;
-	font-size: larger;
-	color: purple;
-}
-
-#tableBalises th{
-	border-style: solid;
-	border-width: thin;
-	border-collapse: collapse;
-	background-color: #DCDCDC;
-}
-#tableBalises td{
-	border-style: solid;
-	border-width: thin;
-	border-collapse: collapse;
-}
 
 /* --- NOTES ---
 
 1.	Notes que cette couleur de fond n'est apparente qu'en bas de page. Plus
-	haut, elle est masque: par la couleur de fond de l'en-tête, puis par la
+	haut, elle est masque: par la couleur de fond de l'en-tï¿½te, puis par la
 	couleur de fond du menu, puis par la couleur de fond du contenu. Seul le
 	pied de page laisse apparaitre cette couleur de fond.
 
-2.	Pour ce gabarit, on supprime l'écart entre les «bords» du navigateur et
-	le contenu, en passant le padding de l'élément BODY à zéro.
-	(Voir également la note numéro 2 dans base.css.)
+2.	Pour ce gabarit, on supprime l'ï¿½cart entre les ï¿½bordsï¿½ du navigateur et
+	le contenu, en passant le padding de l'ï¿½lï¿½ment BODY ï¿½ zï¿½ro.
+	(Voir ï¿½galement la note numï¿½ro 2 dans base.css.)
 
-3.	Si les éléments de notre menu se placent horizontalement plutôt que les
-	uns en dessous des autres, c'est parce qu'ils ne sont plus affichés
-	comme des blocs (ce qui est normalement le cas des éléments LI), mais
-	comme des éléments de type en-ligne. On obtient ce comportement avec la
-	propriété "display" et la valeur "inline".
+3.	Si les ï¿½lï¿½ments de notre menu se placent horizontalement plutï¿½t que les
+	uns en dessous des autres, c'est parce qu'ils ne sont plus affichï¿½s
+	comme des blocs (ce qui est normalement le cas des ï¿½lï¿½ments LI), mais
+	comme des ï¿½lï¿½ments de type en-ligne. On obtient ce comportement avec la
+	propriï¿½tï¿½ "display" et la valeur "inline".
 	Le fait que nos LI se comportent comme un flot unique de texte aura deux
-	conséquences:
-	- on va pouvoir aligner le texte du menu à gauche (c'est le cas ici), à
-	  droite ou encore au centre, en jouant sur la propriété "text-align" du
-	  menu (sur l'élément UL ou sur div#navigation);
-	- certains styles ne pourront pas être appliqués... par exemple, la
-	  propriété "width" ne peut pas être utilisée pour les éléments en
+	consï¿½quences:
+	- on va pouvoir aligner le texte du menu ï¿½ gauche (c'est le cas ici), ï¿½
+	  droite ou encore au centre, en jouant sur la propriï¿½tï¿½ "text-align" du
+	  menu (sur l'ï¿½lï¿½ment UL ou sur div#navigation);
+	- certains styles ne pourront pas ï¿½tre appliquï¿½s... par exemple, la
+	  propriï¿½tï¿½ "width" ne peut pas ï¿½tre utilisï¿½e pour les ï¿½lï¿½ments en
 	  "display: inline".
 
 */
